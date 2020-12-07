@@ -15,5 +15,23 @@ body {
     background-size: contain;
 
 }
+.car{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-image:url(../img/subaru-outback.png) ;
+    background-size: contain;
+    background-position: bottom,center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+.car.car-1 {
+    top: 20%;
+}
+.car.car-2 {
+    top: 56%;
+}
 
 
