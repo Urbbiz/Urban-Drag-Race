@@ -3,12 +3,12 @@ const car2 = document.querySelector('.car-2');
 
 const models = ['astra', 'astra2', 'avencis', 'forester', 'kia', 'saab', 'outback', 'verso']
 
-console.log(models);
+
 const windowWidth = innerWidth;
 const carWidth = 150;
 const finishwidth = 40;
 const finishRightSpace = 10;
-const carStep = 50;
+const carStep = 20;
 
 const finishPosition = windowWidth - carWidth - finishwidth - finishRightSpace;
 

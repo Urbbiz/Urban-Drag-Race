@@ -31,25 +31,25 @@ body {
 .car[data-model="astra"] {
     background-image: url(../img/astra.png);
 }
-car[data-model="astra2"] {
+.car[data-model="astra2"] {
     background-image: url(../img/opel\ astra.png);
 }
-car[data-model="avencis"] {
+.car[data-model="avencis"] {
     background-image: url(../img/Avencis.png);
 }
-car[data-model="forester"] {
+.car[data-model="forester"] {
     background-image: url(../img/forester.png);
 }
-car[data-model="kia"] {
+.car[data-model="kia"] {
     background-image: url(../img/KIA\ eed.png);
 }
-car[data-model="saab"] {
+.car[data-model="saab"] {
     background-image: url(../img/Saab.png);
 }
-car[data-model="outback"] {
+.car[data-model="outback"] {
     background-image: url(../img/subaru-outback.png);
 }
-car[data-model="verso"] {
+.car[data-model="verso"] {
     background-image: url(../img/Toyota\ Verso.png);
 }
 
