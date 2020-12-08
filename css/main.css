@@ -17,21 +17,43 @@ body {
 }
 .car{
     display: inline-block;
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 80px;
     background-image:url(../img/subaru-outback.png) ;
     background-size: contain;
     background-position: bottom,center;
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
+    transition: all 0.5s;
 }
 
 .car.car-1 {
-    top: 20%;
+    top: 20vh;
 }
 .car.car-2 {
-    top: 56%;
+    top: 60vh;
+}
+.line {
+    display: inline-block;
+    width: 52vh;
+    height: 40px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 22vh;
+    left: 190px;
+    transform-origin: top left;
+    border: 5px solid #fff;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    color: #fff;
 }
 
+.line.finish {
+    left:100%;
+
+}
 
