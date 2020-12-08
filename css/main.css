@@ -52,10 +52,15 @@ body {
     color: #fff;
 }
 
+    
 .line.finish {
-    left:99%;
+    left: calc(100% - 10px);
     border-color: red;
     color: white;
+    
+
+    
 
 }
+
 
