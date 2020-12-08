@@ -24,8 +24,33 @@ body {
     background-position: bottom,center;
     background-repeat: no-repeat;
     position: absolute;
-    left: 0;
-    transition: all 0.5s;
+    left: -200px;
+    transition: all 1s;
+}
+
+.car[data-model="astra"] {
+    background-image: url(../img/astra.png);
+}
+car[data-model="astra2"] {
+    background-image: url(../img/opel\ astra.png);
+}
+car[data-model="avencis"] {
+    background-image: url(../img/Avencis.png);
+}
+car[data-model="forester"] {
+    background-image: url(../img/forester.png);
+}
+car[data-model="kia"] {
+    background-image: url(../img/KIA\ eed.png);
+}
+car[data-model="saab"] {
+    background-image: url(../img/Saab.png);
+}
+car[data-model="outback"] {
+    background-image: url(../img/subaru-outback.png);
+}
+car[data-model="verso"] {
+    background-image: url(../img/Toyota\ Verso.png);
 }
 
 .car.car-1 {
