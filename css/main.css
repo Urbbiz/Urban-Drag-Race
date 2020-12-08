@@ -53,7 +53,9 @@ body {
 }
 
 .line.finish {
-    left:100%;
+    left:99%;
+    border-color: red;
+    color: white;
 
 }
 
