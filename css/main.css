@@ -53,11 +53,34 @@ body {
     background-image: url(../img/Toyota\ Verso.png);
 }
 
+.car::before {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffdd;
+    color: #000;
+    font-size: 30px;
+    
+
+}
 .car.car-1 {
     top: 20vh;
 }
+.car-1::before{
+    content: "W";
+    text-align: center;
+}
 .car.car-2 {
     top: 60vh;
+}
+.car-2::before{
+    content: "P";
+    text-align: center;
 }
 .line {
     display: inline-block;

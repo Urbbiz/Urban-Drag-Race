@@ -8,7 +8,7 @@ const windowWidth = innerWidth;
 const carWidth = 150;
 const finishwidth = 40;
 const finishRightSpace = 10;
-const carStep = 20;
+const carStep = 30;
 
 const finishPosition = windowWidth - carWidth - finishwidth - finishRightSpace;
 
