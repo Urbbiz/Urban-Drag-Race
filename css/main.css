@@ -77,7 +77,7 @@ body {
     text-align: center;
 }
 .car.car-2 {
-    top: 60vh;
+    top: 55vh;
 }
 .car-2::before{
     content: "P";
