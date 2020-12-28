@@ -26,38 +26,44 @@ const finishRightGap = 10;
 // const carStep = 30;
 const distanceToFinish = windowWidth - carWidth - finishwidth - finishRightGap;
 
-addEventListener('keyup', (event) => {
-    if (victory) {
-        return;
-    }
 
 
 // car1.style.left = car1Position;
 // car2.style.left = car2Position;
 
+addEventListener('keyup', (event) => {
+    if (victory) {
+        return;
+    }
 
 // addEventListener('keypress'); /* registruoja ir paspaudima ir atspaudimapaspaudimas */
 // addEventListener('keydown');  /* registruoja tik kai ispaudi  */
-addEventListener('keyup',(event) => {
+// addEventListener('keyup',(event) => {
     const key = event.key;
     if(key === 'w') {
-        car1Position += 30;
+        car1Position += 20;
         car1.style.left = car1Position + 'px';
         if (car1Position > distanceToFinish) {
             victory = true;
-            location.reload();
+            winP.innerText = 'Pirma laimejo';
+            winBlock.classList.add('show');
+            pyroBlock.classList.add('show');    
         }
     }
 
     if(key === 'p') {
-        car2Position += carStep;
+        car2Position += 20;
         car2.style.left = car2Position + 'px';
-        if (car2Position > finishPosition) {
-            alert ('laimejo antras automobilis!')
-            location.reload();
-        }
-        
+        if (car2Position > distanceToFinish) {
+            victory = true;
+            winP.innerText = 'Antra laimejo';
+            winBlock.classList.add('show');
+            pyroBlock.classList.add('show')   
+        }  
     }
 
+})
+playAgain.addEventListener('click',() => {
+    location.reload();
 
 }) 
