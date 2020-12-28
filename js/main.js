@@ -3,6 +3,12 @@ import {getModel} from './getModel.js';
 
 const car1 = document.querySelector('.car-1');
 const car2 = document.querySelector('.car-2');
+const pyroBlock = document.querySelector('.pyro');
+const winBlock = document.querySelector('.win');
+const winP = winBlock.querySelector('p');
+const playAgain = winBlock.querySelector('button');
+let victory = false;
+
 
 // const models = ['astra', 'astra2', 'avencis', 'forester', 'kia', 'saab', 'outback', 'verso']
 
@@ -14,6 +20,8 @@ const finishRightSpace = 10;
 const carStep = 30;
 
 const finishPosition = windowWidth - carWidth - finishwidth - finishRightSpace;
+let car1Position = 0;
+let car2Position = 0;
 
 const car1Model = getModel(models);   /*Math.floor(Math.random() * models.length);*/
 const car2Model = getModel(models);  /*Math.floor(Math.random() * models.length);*/
@@ -21,8 +29,7 @@ const car2Model = getModel(models);  /*Math.floor(Math.random() * models.length)
 car1.dataset.model = models[car1Model];
 car2.dataset.model = models[car2Model];
 
-let car1Position = 0;
-let car2Position = 0;
+
 
 car1.style.left = car1Position;
 car2.style.left = car2Position;
