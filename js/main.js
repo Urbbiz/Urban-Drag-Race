@@ -1,7 +1,10 @@
+import {models} from './modelsData.js';
+import {getModel} from './getModel.js';
+
 const car1 = document.querySelector('.car-1');
 const car2 = document.querySelector('.car-2');
 
-const models = ['astra', 'astra2', 'avencis', 'forester', 'kia', 'saab', 'outback', 'verso']
+// const models = ['astra', 'astra2', 'avencis', 'forester', 'kia', 'saab', 'outback', 'verso']
 
 
 const windowWidth = innerWidth;
@@ -12,8 +15,8 @@ const carStep = 30;
 
 const finishPosition = windowWidth - carWidth - finishwidth - finishRightSpace;
 
-const car1Model = Math.floor(Math.random() * models.length);
-const car2Model = Math.floor(Math.random() * models.length);
+const car1Model = getModel(models);   /*Math.floor(Math.random() * models.length);*/
+const car2Model = getModel(models);  /*Math.floor(Math.random() * models.length);*/
 
 car1.dataset.model = models[car1Model];
 car2.dataset.model = models[car2Model];
