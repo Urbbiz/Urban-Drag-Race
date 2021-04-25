@@ -14,15 +14,15 @@ body {
     background-repeat: repeat-x;
     background-size: contain;
     overflow: hidden;
-
 }
-.car{
+
+.car {
     display: inline-block;
     width: 150px;
     height: 80px;
-    background-image:url(../img/subaru-outback.png) ;
+    background-image: url(../img/subaru-outback.png);
     background-size: contain;
-    background-position: bottom,center;
+    background-position: bottom, center;
     background-repeat: no-repeat;
     position: absolute;
     /* left: -200px;
@@ -32,24 +32,31 @@ body {
 .car[data-model="astra"] {
     background-image: url(../img/astra.png);
 }
+
 .car[data-model="astra2"] {
     background-image: url(../img/opel\ astra.png);
 }
+
 .car[data-model="avencis"] {
     background-image: url(../img/Avencis.png);
 }
+
 .car[data-model="forester"] {
     background-image: url(../img/forester.png);
 }
+
 .car[data-model="kia"] {
     background-image: url(../img/KIA\ eed.png);
 }
+
 .car[data-model="saab"] {
     background-image: url(../img/Saab.png);
 }
+
 .car[data-model="outback"] {
     background-image: url(../img/subaru-outback.png);
 }
+
 .car[data-model="verso"] {
     background-image: url(../img/Toyota\ Verso.png);
 }
@@ -66,23 +73,26 @@ body {
     background-color: #ffdd;
     color: #000;
     font-size: 30px;
-
-
 }
+
 .car.car-1 {
     top: 20vh;
 }
-.car-1::before{
+
+.car-1::before {
     content: "W";
     text-align: center;
 }
+
 .car.car-2 {
     top: 55vh;
 }
-.car-2::before{
+
+.car-2::before {
     content: "P";
     text-align: center;
 }
+
 .line {
     display: inline-block;
     width: 52vh;
@@ -101,13 +111,13 @@ body {
     color: #fff;
 }
 
-    
 .line.finish {
     left: calc(100% - 10px);
     border-color: red;
     color: white;
 }
-.win{
+
+.win {
     display: none;
     position: absolute;
     top: 50%;
@@ -116,6 +126,7 @@ body {
     font-size: 160px;
     text-align: center;
 }
+
 .win.show {
     display: block;
 }
@@ -125,24 +136,22 @@ button {
     padding: 20px 50px;
 }
 
-
 footer {
-display: inline-block;
-width: 100%;
-height: 13%;
- background-color:#fff4; 
-/* position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 13%;
+    /* background-color:#fff4;  */
+    /* position: absolute;
     top: 80%; */
 }
-footer >img {
+
+footer>img {
     width: 80px;
     margin-left: 30px;
     margin-top: 10px;
-    
 }
+
 .logo {
     width: 200px;
     margin-left: 50px;
-    
 }
-
